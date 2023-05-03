@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ac28c515a.js" crossorigin="anonymous"></script> <!--Iconos-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logozoco.ico">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 d-none d-md-block"></div>
+                    <div class="col-md-7">
+                        <div class="nav"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+          <div class="container">
+              <div class="row header-middle-in">
+                  <div class="col-xl-4 contenedor-logo">
+                      <a href="">
+                          <img src="./assets/logozoco.jpg" alt="logozoco" class="logo">
+                      </a>
+                  </div>
+                  <div class="col-xl-4 search">
+                      <input type="search" placeholder="Buscar...">
+                      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  </div>
+                  <div class="col-xl-4 ht-right">
+                      <div class="ht-right">
+                          <span class="cuenta-carrito">
+                              <a href="#" class="fa-solid fa-cart-shopping" style="color: black;"></a>
+                              <div>CARRITO</div>
+                          </span>
+                      </div>
+                      <div class="ht-right">
+                          <span class="cuenta-carrito">
+                              <a href="#" class="fa-solid fa-user" style="color: black;"></a>
+                              <div>CUENTA</div>
+                          </span>
+                      </div>                     
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!--Barra navegacion -->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu"> <!--Barra menu-->
+                <li class="nav-item">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="comprar.html">Comprar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="preguntas.html">Preguntas freguentes</a>
+                </li>
+            </ul>
+            <div class="navbar-categorias">
+              <div class="dropdown">
+                  <select name="" id="">
+                      <option value="1">TODOS LOS PRODUCTOS</option>
+                      <option value="2">BEBIDAS S/ALCOHOL</option>
+                      <option value="3">BEBIDAS C/ALCOHOL</option>
+                  </select>
+              </div>
+          </div>
+        </nav>
+    </header>
+    <!--Contenido-->
+    <main>
+        <section>
+            <div class="questions-container">
+                <h3>Preguntas Frecuentes</h3>
+            </div>
+            <div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          ¿De que se trata este nuevo canal de ventas?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Con el objetivo de expandir nuestra llegada y continuar brindando herramientas digitales para que nuestros clientes tengan cada vez una mejor experiencia de compra, estamos implementando un nuevo canal de pedidos, totalmente digital, para la adquisición de productos distribuidos por Zoco Minimarket.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          ¿Para que zonas esta habilitado este nuevo canal?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">El canal se habilitará para toda la zona de Villa Allende y Cordoba capital, dentro del anillo de circunvalacion.
+
+                          A medida que ampliemos nuestro alcance, lo comunicaremos para que pueda crear su cuenta, siempre y cuando te encuentres dentro de las zonas de funcionamiento del canal.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          ¿Como hago para comprar en la tienda?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          1- En el inicio o Home, encontraras dos botones: “Comprar” y “Categorías”.
+                          Hacé click en cualquiera de ellos y seleccioná los productos que quieras adquirir.
+                          En ambos, encontrarás Filtros a tu derecha que podés usar para encontrar el producto exacto que buscas.
+                          <br>
+                          2- Agrega al carrito el producto que desees y de alli podras agregar la cantidad con el botón - o +; o bien apreta el boton agregar carrito las veces que desees.
+                          <br>
+                          3- Para ver la suma total de tu pedido, hacé clic en el ícono de “Carrito”, desde donde se desplegará la lista de tus productos.
+                          Dentro podrás editar las cantidades y también podrás eliminar algún ítem.
+                          <br>
+                          4- Por último, en “Confirmar pedido” vas a poder verificar todos los datos referidos a tu pedido y vas a poder confirmarlo una vez aceptados los términos y condiciones.
+                          Es muy importante que verifiques el mismo antes de avanzar con su confirmación, ya que una vez aceptado no podrás editarlo.
+                          El pedido sera entregado a la direccion ingresada en el registro de apertura de cuenta.
+                          <br>
+                          5- Una vez confirmado el pedido recibirás un comprobante por compañía y numero de orden del pedido realizado que también enviaremos al email que tengas registrado.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            ¿Hay un monto minimo de compra?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">No hay monto minimo.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Si salgo de la pagina sin confirmar mi pedido, ¿Puedo continuarlo en otro momento?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Al estar con una sesión iniciada, Zoco Minimarket guarda la compra en proceso, por lo que podés salir de la página las veces que quieras y volver más tarde para continuar o finalizar tu compra.
+                            <br>
+                            El pedido permanecerá en tu Carrito hasta que decidas vaciarlo o finalizarlo.
+                            <br>
+                            Tené en cuenta que cuando se finaliza una compra un día distinto al de su inicio, podés encontrarte con modificaciones de precios y ofertas vigentes.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Quiero cancelar mi pedido. ¿Es posible?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Para cancelar tu pedido, por favor envianos un correo a admzoco@outlook.com con el asunto: “Cancelar pedido” y “Numero de orden”.</div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <!--Pie de pagina-->
+    <footer>
+        <div class="pie-pagina">
+            <div class="contenedor-grupo-1">
+                <div class="grupo-1"> <!--Derechos de autor-->
+                    <p>SITIO EXCLUSIVO PARA CLIENTES</p>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <div class="box">
+                    <h3>ENCONTRANOS EN</h3> <!--Ubicacion-->
+                    <p>Av. Rio de janeiro 1624 - Villa allende, Cordoba, Argentina</p>
+                    <p>CUIT: 20-12345678-6</p>
+                </div>
+                <div class="box">
+                    <h3>SOBRE NOSOTROS</h3> <!--Info. adicional-->
+                    <a href="#">Terminos y Condiciones</a>
+                    <a href="#">Politica Comercial</a>
+                    <a href="#">Politica de Privacidad</a>
+                </div>
+                <div class="box">
+                    <h3>CONTACTANOS</h3> <!--Red social y contacto-->
+                    <div class="red-social">
+                        <a href="#" class="fa-solid fa-phone" target="_blank"></a>
+                        <span>0800-888-0000</span>
+                    </div>
+                    <div class="red-social">
+                        <a href="#" class="fa-brands fa-whatsapp" target="_blank"></a>
+                        <span>+54 9 351-762-0775</span>
+                    </div>
+                    <div class="red-social">
+                        <a href="#" class="fa-solid fa-envelope" target="_blank"></a>
+                        <span>admzoco@outlook.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-grupo-3">
+                <div class="grupo-3"> <!--Derechos de autor-->
+                    <small>&copy; 2023 <b>ZOCO MINIMARKET</b> - Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
