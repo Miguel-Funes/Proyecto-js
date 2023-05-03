@@ -85,13 +85,3 @@ function renderizarTarjetas(productos){
 const saveLocal = () => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 };
-
-/*
-const getProducts = async () => {
-    const response = await fetch("data.json");
-    const data = await response.json();
-};
-*/
-/*
-getProducts();
-*/
