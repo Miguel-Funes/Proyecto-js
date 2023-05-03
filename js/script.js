@@ -22,9 +22,10 @@ function filtrarPorCategoria() {
     let arrayFiltrado = productos.filter(producto => producto.categoria === filtro.value)
     if (producto => producto.categoria === filtro.value) {
         renderizarTarjetas(arrayFiltrado)
-    } else{
-        renderizarTarjetas(productos)
-    } 
+    } else if(filtro.value == "todos"){
+        renderizarTarjetas(contenedor)
+    }
+     
 }
 /*CARDS*/
 function renderizarTarjetas(productos){
