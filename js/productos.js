@@ -1,4 +1,4 @@
-const productos = [
+/*const productos = [
     {
         id: 1,
         nombre: "Gaseosa coca-cola original 1,5l",
@@ -216,3 +216,4 @@ const productos = [
         cantidad: 1,
     },
 ];
+*/

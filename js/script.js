@@ -1,5 +1,9 @@
 const shopContent = document.getElementById("shopContent");
-renderizarTarjetas(productos)
+fetch("data.json")
+    .then((response) => response.json())    
+    .then((productos) =>{
+        renderizarTarjetas(productos)
+    })
 const verCarrito = document.getElementById("verCarrito");
 const ticketContent = document.getElementById("ticketContent");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
@@ -35,11 +39,6 @@ function filtrarPorCategoria() {
     })
 }
 /*CARDS*/
-fetch(url)
-    .then((response) => response.json())    
-    .then((productos) => {
-})
-
 function renderizarTarjetas(productos){
     shopContent.innerHTML = ""
     productos.forEach((producto)=> {
