@@ -11,7 +11,7 @@ let buscador = document.getElementById("buscador")
 buscador.addEventListener("input", filtrarPorNombre)
 
 function filtrarPorNombre() {
-    let arrayFiltrado = productos.filter(producto => producto.nombre.includes(buscador.value))
+    let arrayFiltrado = productos.filter(producto => producto.nombre.includes(buscador.value.toLowerCase()))
     renderizarTarjetas(arrayFiltrado)
 }
 /*FILTRO CATEGORIAS*/
