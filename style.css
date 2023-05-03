@@ -296,7 +296,6 @@ h2 {
     overflow: auto;
     top: 12vh;
     scrollbar-color: none;
-    border-bottom: 1px solid rgb(239, 184, 3);
     border-left: 1px solid rgb(239, 184, 3);
     border-right: 1px solid rgb(239, 184, 3);
 }
@@ -341,13 +340,14 @@ h2 {
     color: rgb(3, 132, 3);
 }
 .total-content {
-    width: 60%;
+    width: 100%;
     font-size: 25px;
     padding: 20px;
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(239, 184, 3);
     font-weight: bold;
+    border-bottom: 1px solid rgb(239, 184, 3);
 }
 .delete-product {
     cursor: pointer;

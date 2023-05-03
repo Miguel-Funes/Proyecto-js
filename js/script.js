@@ -19,13 +19,12 @@ let filtro = document.getElementById("filtro")
 filtro.addEventListener("change", filtrarPorCategoria)
 
 function filtrarPorCategoria() {
-    let arrayFiltrado = productos.filter(producto => producto.categoria === filtro.value)
-    if (producto => producto.categoria === filtro.value) {
+    if (filtro.value === "todos") {
+        renderizarTarjetas(productos)
+    } else {
+        let arrayFiltrado = productos.filter(producto => producto.categoria === filtro.value)
         renderizarTarjetas(arrayFiltrado)
-    } else if(filtro.value == "todos"){
-        renderizarTarjetas(contenedor)
     }
-     
 }
 /*CARDS*/
 function renderizarTarjetas(productos){
