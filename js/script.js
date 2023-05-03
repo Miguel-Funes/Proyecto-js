@@ -11,22 +11,35 @@ let buscador = document.getElementById("buscador")
 buscador.addEventListener("input", filtrarPorNombre)
 
 function filtrarPorNombre() {
-    let arrayFiltrado = productos.filter(producto => producto.nombre.includes(buscador.value.toLowerCase()))
-    renderizarTarjetas(arrayFiltrado)
+    fetch("data.json")   
+        .then((response) => response.json())
+        .then((productos) => {
+        let arrayFiltrado = productos.filter(producto => producto.nombre.includes(buscador.value.toLowerCase()))
+        renderizarTarjetas(arrayFiltrado)
+    })
 }
 /*FILTRO CATEGORIAS*/
 let filtro = document.getElementById("filtro")
 filtro.addEventListener("change", filtrarPorCategoria)
 
 function filtrarPorCategoria() {
-    if (filtro.value === "todos") {
-        renderizarTarjetas(productos)
-    } else {
-        let arrayFiltrado = productos.filter(producto => producto.categoria === filtro.value)
-        renderizarTarjetas(arrayFiltrado)
-    }
+    fetch("data.json")   
+        .then((response) => response.json())
+        .then((productos) => {
+        if (filtro.value === "todos") {
+            renderizarTarjetas(productos)
+        } else {
+            let arrayFiltrado = productos.filter(producto => producto.categoria === filtro.value)
+            renderizarTarjetas(arrayFiltrado)
+        }
+    })
 }
 /*CARDS*/
+fetch(url)
+    .then((response) => response.json())    
+    .then((productos) => {
+})
+
 function renderizarTarjetas(productos){
     shopContent.innerHTML = ""
     productos.forEach((producto)=> {
@@ -79,6 +92,7 @@ const getProducts = async () => {
     const response = await fetch("data.json");
     const data = await response.json();
 };
-
+*/
+/*
 getProducts();
 */
